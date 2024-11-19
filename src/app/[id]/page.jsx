@@ -7,8 +7,11 @@ const obterAnoValidade = () => {
   return anoAtual + 1;
 };
 
-const StudentPage = ({ params }) => {
-  const student = students.find((s) => s.id === params.id);
+const StudentPage = async ({ params }) => {
+  const { id } = await params;
+
+  // Encontra o estudante pelo ID
+  const student = students.find((s) => s.id === id);
 
   if (!student) {
     return (
@@ -69,6 +72,7 @@ const StudentPage = ({ params }) => {
           <p className="font-bold">Validade:</p>
           <p>JAN/{obterAnoValidade()}</p>
         </div>
+        <DataAtual />
       </div>
     </div>
   );
