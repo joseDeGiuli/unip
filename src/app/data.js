@@ -39,4 +39,14 @@ export const students = [
     unidade: "0128 - S J RIO PRETO II",
     carteirinha: "ATIVO",
   },
+  {
+    id: "69",
+    matricula: "N1812A1",
+    nome: "",
+    rg: "",
+    nascimento: "",
+    curso: "54321 - SUP TEC CIENCIA DA COMPUTACAO",
+    unidade: "0128 - S J RIO PRETO II",
+    carteirinha: "ATIVO",
+  },
 ];
